@@ -1,0 +1,78 @@
+import java.util.*;
+class ArrayTest01 
+
+{
+	public static void main(String[] args) 
+	{
+		//Q1. 10명의 학생의 점수를 입력받아 총합, 평균을 구하는 프로그램 작성
+		//Q2. 난수를 이용해 배열의 사이즈가 10인 배열의 값을 지정.  값의 범위(1~10 )
+		// '검색' 위와 별개로 값을 하나 입력 받는다 -> 입력 받은 값과 동일한 값이 배열 안에 존재하는지 여부, 값의 위치 확인
+       // Q3. 난수를 이용해 사이즈가 5인 배열의 값을 지정(값의 범위 : 1~10)
+	   //       지정한 값들은 중복되지 않는다.
+	  
+	   
+	   //Q1.
+	  Scanner sc = new Scanner(System.in);
+		int [] arr1 = new int [10]; //배열 크기 결정
+	    int total = 0;
+
+		for (int i = 0; i <10 ; i++)
+		{
+		  int stu = sc.nextInt();
+		  arr1[i] = stu;
+		  total = total + arr1[i];
+		 		}
+		 int avg = total/10;
+		  System.out.println("총합: " + total);
+		  System.out.println("평균 : " + avg);
+
+          System.out.println();
+		  System.out.println();
+          System.out.println();
+		 //Q2
+
+		 System.out.println("찾을 숫자를 입력하세요");
+		 int [] arr2 = new int [5];
+         int j;
+		 
+	 
+		  for (j =0; j<5 ; j++)
+		 {
+			  arr2 [j]= (int)(Math.random()*10+1);
+		 }
+		 int input = sc.nextInt();
+
+		 for (j =0; j<5 ; j++)
+		 {
+			if (input == arr2[0])
+		 {
+			 System.out.println("동일한 값 존재" + 0 +"번째 위치");
+			 break;
+		 } else if (input == arr2[1]){
+		     System.out.println("동일한 값 존재" + 1 +"번째 위치");		
+			 break;
+		 }else if (input == arr2[2]){
+		     System.out.println("동일한 값 존재" + 2 +"번째 위치");
+			 break;
+		}else if (input == arr2[3]){
+		     System.out.println("동일한 값 존재" + 3 +"번째 위치");
+			 break;
+		} else if (input == arr2[4]){
+		     System.out.println("동일한 값 존재" + 4 +"번째 위치");
+			 break;
+		}else {
+			System.out.println("찾는 값이 없습니다.");
+			break;
+		}
+		 }
+
+		
+		  
+	/*	else{
+			 while(input != arr2[j]){
+		     System.out.println("찾는 값이 없습니다.");
+			 input = sc.nextInt();
+		 }
+		 }*/
+	}
+}
