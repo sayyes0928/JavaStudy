@@ -1,0 +1,29 @@
+class  AccountTester
+{
+	public static void main(String[] args) 
+	{
+		String chulName = "Ã¶¼ö";
+		String chulNo ="123456";
+		long chulBalance = 1000;
+
+		String younglName = "¿µÈñ";
+		String youngNo ="654321";
+		long youngBalance = 200;
+
+		chulBalance -= 200;
+		youngBalance += 100;
+
+		System.out.println(" * Ã¶¼öÀÇ °èÁÂ");
+		System.out.println(" °èÁÂ¸íÀÇ : " + chulName);
+		System.out.println(" °èÁÂ¹øÈ£ : " + chulNo);
+		System.out.println(" ¿¹±İÀÜ°í : " + chulBalance);
+
+
+		System.out.println(" * ¿µÈñÀÇ °èÁÂ");
+		System.out.println(" °èÁÂ¸íÀÇ : " + chulName);
+		System.out.println(" °èÁÂ¹øÈ£ : " + chulNo);
+		System.out.println(" ¿¹±İÀÜ°í : " + chulBalance);
+
+
+	}
+}

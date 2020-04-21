@@ -1,0 +1,39 @@
+class MethodEx03 
+{
+	public int methodExam01(int a1, int a2){
+	int a = 2;
+	System.out.println("Exam01의 메소드입니다.");
+	return a;
+	}
+
+	public String methodExam02(String b1){
+	String b = "JAVA";
+	System.out.println("Exam02의 메소드입니다.");
+	return b;
+	}
+
+	void methodExam03(int c1, String c2){
+		System.out.println("Exam03의 메소드입니다.");
+		System.out.println("리턴값이 없습니다.");
+	}
+
+	public double methodExam04(double d1, double d2, double d3){
+	double d = 2.0;
+	System.out.println("Exam04의 메소드입니다.");
+	return d;
+	}
+
+	public static void main(String[] args) 
+	{
+		MethodEx03 met = new MethodEx03();
+
+		int k = met.methodExam01(33,22);
+		System.out.println("리턴값은 : "+k);
+		String s = met.methodExam02("리턴값은 : "+"java");
+		System.out.println("리턴값은 : "+s);
+		met.methodExam03(42,"green");
+		double d = met.methodExam04(7, 5.5, 5);
+		System.out.println("리턴값은 : "+d);
+		System.out.println(MethodEx02.k);
+	}
+}
