@@ -1,0 +1,47 @@
+class Saram_5_x1
+{
+	String name;
+	int age;
+	
+	void title(){
+		System.out.println("<자바 객체 생성>");
+		System.out.println("*신상 출력*");
+		System.out.println("----------------------");
+	}
+	int age(String a1, int a2){
+		int k = a2;
+		System.out.println();
+		return k;
+	}
+}
+
+
+class TestNo4 
+{
+	public static void main(String[] args) 
+	{
+		Saram[] men = new Saram[3];//객체배열 생성
+
+			men[0] = new Saram();
+			men[1] = new Saram();
+			men[2] = new Saram();
+
+			men[0].name = "김자바";
+			men[1].age = 35;
+
+
+		Saram_5_x1 p1 = new Saram_5_x1(); //객체 생성
+		int A = p1.age("홍길동",35);
+
+		Saram_5_x1 p2 = new Saram_5_x1();
+		int B = p1.age("고길동",8);
+
+		Saram_5_x1 p3 = new Saram_5_x1();
+		int C = p1.age("홍개동",6);
+		
+		int total = A+B+C;
+		double avg = total/3;
+		System.out.println("나이의 총 합은 : " + total);
+		System.out.println("나이의 평균은 : " + avg);
+	}
+}
